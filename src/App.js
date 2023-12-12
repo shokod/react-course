@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+
+import LyricCard from "./components/LyricCard";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Lyrics Cards</h1>
+      <LyricCard text="The mood is right"/>
+      <LyricCard text="Incense Burning"/>
+      <LyricCard text="I feel your vibe"/>
+      
+      
     </div>
   );
 }
