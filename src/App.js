@@ -1,16 +1,22 @@
-
-import LyricCard from "./components/LyricCard";
-
+import { Route, Routes } from  'react-router-dom';
+import AllMeetups from './pages/AllMeetups';
+import NewMeetups from './pages/NewMeetups'
+import Favorites from './pages/Favorites';
 
 function App() {
   return (
     <div>
-      <h1>Lyrics Cards</h1>
-      <LyricCard text="The mood is right"/>
-      <LyricCard text="Incense Burning"/>
-      <LyricCard text="I feel your vibe"/>
-      
-      
+      <Routes>
+      <Route path='/' element={<AllMeetups />}>
+        
+      </Route>
+      <Route path='/new-meetup' element={<NewMeetups />}>
+        
+      </Route>
+      <Route path='/favorites' element={<Favorites />}>
+        
+      </Route>
+      </Routes>
     </div>
   );
 }
